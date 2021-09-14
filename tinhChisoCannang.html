@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+<p> nhập số cân nặng tôi sẽ cho bạn biết tình trạng sức khỏe</p>
+
+<input type="text" id="body1" ><p> cân nặng</p>
+<input type="text" id="height1"><p> chiều cao</p>
+<br>
+<br>
+<button onclick="click()"> ĐO</button>
+<script>
+    function click() {
+        let a =+document.getElementById('body1').value;
+        let b=+document.getElementById('height1').value;
+        let BMI= a/(b**2)
+        if (BMI<18){
+            alert('Underweight')
+        }
+        else if (BMI<25) {
+            alert('Normal')
+        }
+        else if ( BMI <30){
+           alert('Overweight')
+        }
+        else {
+           alert('Obese')
+        }
+    }
+</script>
+</body>
+</html>
