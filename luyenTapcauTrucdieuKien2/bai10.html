@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let kwh=+prompt('nhập số điện')
+    let bac1=1500
+    let bac2=2000
+    let bac3=3000
+    if (kwh>0){
+        if(kwh<=50){
+            alert(bac1*kwh)
+        }if(kwh>50&&kwh<=100){
+            alert(bac2*kwh)
+        }if(kwh>100){
+            alert(bac3*kwh)
+        }
+    } else alert('ko dùng điện à')
+</script>
+</body>
+</html>

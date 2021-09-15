@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="doC"> nhập vào độ C
+<br>
+<br>
+<button onclick="check()"> Chuyển đổi </button>
+<p id="resolt"> </p>
+
+<script>
+    function check(){
+        let c=+document.getElementById('doC').value;
+        let f=c*9/5 + 32
+        document.getElementById('resolt').innerHTML= c +'độ C bằng '+ f +"độ F"
+    }
+</script>
+</body>
+</html>

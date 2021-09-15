@@ -11,13 +11,14 @@
 <input type="text" id="height1"><p> chiều cao</p>
 <br>
 <br>
-<button onclick="click()"> ĐO</button>
+<button onclick="click()" type="button"> ĐO</button>
 <script>
     function click() {
         let a =+document.getElementById('body1').value;
         let b=+document.getElementById('height1').value;
-        let BMI= a/(b**2)
-        if (BMI<18){
+        let BMI= a/(b*b)
+        if (BMI<18)
+        {
             alert('Underweight')
         }
         else if (BMI<25) {

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> nhập tuổi của bạn</p>
+<input type="text" id="old()" >
+<button type="button" onclick="run()">kiểm tra</button>
+<h1 id="result"></h1>
+<script>
+    function run(){
+        let old=document.getElementById('old()').value;
+        if (old < "15" ){
+            document.getElementById('result').innerHTML=old + 'thì chưa đủ tuổi đi học đâu'
+        }else  document.getElementById('result').innerHTML=old + 'okok'
+    }
+</script>
+</body>
+</html>

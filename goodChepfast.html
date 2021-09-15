@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="good" type="checkbox" value="Good" oninput="check('fast')">Good <br> <br>
+<input id="fast" type="checkbox" value="Fast" oninput="check('cheap')">Fast <br> <br>
+<input id="cheap" type="checkbox" value="Cheap" oninput="check('good')"> Cheap <br> <br>
+</body>
+<script>
+    function check(option){
+        let goodIsChecked = document.getElementById("good").checked;
+        let fastIsChecked = document.getElementById("fast").checked;
+        let cheapIsChecked = document.getElementById("cheap").checked;
+        if (goodIsChecked == fastIsChecked == cheapIsChecked == true)
+        {
+            document.getElementById(option).checked = false;
+        }
+    }
+</script>
+</body>
+</html>

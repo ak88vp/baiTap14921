@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let wage=+prompt('số tiền lương 1 tháng')
+    let tax;
+    if (wage>0){
+        if (wage<15000000){
+            alert('thuế phải nộp là'+wage*5/100)
+
+            }if (wage>=15000000&&wage<50000000){
+            alert('thuế phải nộp là'+wage*10/100)
+        }if(wage>50000000){
+            alert('thuế phải nộp là'+wage*25/100)
+        }
+        }else alert('đi làm đi ông ơi')
+
+</script>
+
+</body>
+</html>

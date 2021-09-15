@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p> nhập độ dài cạnh hình vuông</p>
+<input type="text" id="edge">
+<button type="button" onclick="calculate()">calculate</button>
+<p id="resolt"> </p>
+<script>
+    function calculate(){
+        let a=document.getElementById('edge').value;
+        let area=a*a
+        document.getElementById('resolt').innerHTML='với hình vuông có cạnh là'+ a +"ta tính được diện tích của hình vuông là"+area
+    }
+</script>
+</body>
+</html>

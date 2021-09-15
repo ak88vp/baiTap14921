@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="met"> mét
+<br>
+<br>
+<button onclick="check()"> Chuyển đổi </button>
+<p id="resolt"> </p>
+
+<script>
+    function check(){
+        let m=+document.getElementById('met').value;
+        let ft =m*3.2808
+        document.getElementById('resolt').innerHTML= m +" mét bằng " + ft + "feet"
+    }
+</script>
+
+</body>
+</html>
